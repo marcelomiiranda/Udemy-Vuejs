@@ -1,0 +1,2 @@
+https://br.vuejs.org/v2/guide/events.html
+https://vuejs.org/v2/guide/events.html#Key-Modifiers

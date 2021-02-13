@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="styles.css">
+<script src="https://unpkg.com/vue"></script>
+
+<div id="app">
+    <div class="div-first">
+        <div>
+            <p>{{ jogador }}</p>
+            <div class="barra-progresso-jogador">
+                <div class="progresso-jogador" :style="{'width': widthJogador, 'background-color': corVidaJogador}"></div>
+            </div>
+            {{ porcentagemJogador }}%
+        </div>
+        
+        <div>
+            <p>{{ monstro }}</p>
+            <div class="barra-progresso-monstro">
+                <div class="progresso-monstro" :style="{'width': widthMonstro, 'background-color': corVidaMonstro}"></div>
+            </div>
+            {{ porcentagemMonstro }}%
+        </div>   
+    </div>
+
+    <div class="div-first" v-show="fimJogo">
+        <p :style="{'background-color': corMensagemFinal}"> {{mensagemFinal}} </p>
+    </div>
+
+    <div class="div-second" v-show="!jogar">
+        <button class="button-novo-jogo" @click="jogar = !jogar">INICIAR NOVO JOGO</button>
+    </div>
+
+    <div class="div-second" v-show="jogar">
+        <button class="button-ataque" @click="ataque">ATQUE</button>
+        <button class="button-ataque-especial" @click="ataqueEspecial">ATAQUE ESPECIAL</button>
+        <button class="button-curar" @click="curar">CURAR</button>
+        <button class="button-desistir" @click="desistir">DESISTIR</button>
+    </div>
+
+    <div class="div-second" v-show="listaAtaques">
+        <template v-for="item, indice in listaAtaques">
+            <p class="monstro" v-if="indice % 2 == 0"> {{ item }} </p>
+            <p class="jogador" v-else> {{ item }} </p>
+        </template>
+        
+    </div>
+</div>
+
+<script src="app.js"></script>

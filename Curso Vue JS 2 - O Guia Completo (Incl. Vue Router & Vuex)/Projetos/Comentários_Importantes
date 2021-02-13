@@ -1,0 +1,3 @@
+Seção 3: Condicionais e renderização
+ - A tag template não cria outra tag (div por exemplo) e permite usar o condicional para mais de um elemento.
+ - v-if remove o elemento da tela. v-show apenas oculta.

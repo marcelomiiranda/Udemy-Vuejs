@@ -1,0 +1,76 @@
+.div-first {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    text-align: center;
+}
+
+.div-second {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    text-align: center;
+}
+
+.barra-progresso-jogador {
+    height: 30px;
+    width: 500px;
+    border: 1px solid black;
+    margin: auto;
+}
+
+.progresso-jogador {
+    background-color: green;
+    height: 100%;
+}
+
+.barra-progresso-monstro {
+    height: 30px;
+    width: 500px;
+    border: 1px solid black;
+    margin: auto;
+}
+
+.progresso-monstro {
+    background-color: green;
+    height: 100%;
+}
+
+.button-novo-jogo {
+    background-color: #8080ff;
+    color: white;
+}
+
+.button-ataque {
+    background-color: red;
+    color: white;
+}
+
+.button-ataque-especial {
+    background-color: yellow;
+}
+
+.button-curar {
+    background-color: green;
+    color: white;
+}
+
+.button-desistir {
+    background-color: gray;
+}
+
+.monstro {
+    background-color: rgb(240, 86, 86);
+}
+
+.jogador {
+    background-color: rgb(62, 128, 252);
+}
